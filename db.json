@@ -1,0 +1,13 @@
+{
+	"users": [
+		{
+			"name": "Wahed Ali",
+			"img": "/images/wahed.jpg",
+			
+		},
+		{
+			"name": "Harsh",
+			"img": "/images/harsh.jpg"
+		}
+	]
+}
