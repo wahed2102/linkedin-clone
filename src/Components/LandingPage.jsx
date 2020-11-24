@@ -1,60 +1,60 @@
 import React from "react";
 import styled from "styled-components";
+import LinkedIn from "../images/LinkedIn.png";
 
 const Navigation = styled.div`
     display: flex;
-    height: 40px;
+    height: 7rem;
     justify-content: space-between;
-    align-items: center;
-    width: 84.75%;
-    padding: 10px 7.5% 10px 7.5%;
+    width: 134.7rem;
+    padding: 1.5rem 10rem;
 `;
 
 const RightSection = styled.div`
-    height: 40px;
-    width: 400px;
+    height: 4rem;
+    width: 40rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
+    font-size: 1.5rem;
 `;
 
 const JoinButtons = styled.div`
     color: #707070;
     cursor: pointer;
     font-weight: 600;
-    margin-right: 10px;
-    padding: 10px;
+    margin-right: 1rem;
+    padding: 1rem;
 
     &:hover {
         background-color: #e6e6e4;
         color: black;
-        border-radius: 5px;
+        border-radius: 0.5rem;
     }
 `;
 
 const Seperator = styled.div`
     color: #d4d4e4;
-    margin-right: 10px;
+    margin-right: 1rem;
 `;
 
 const SignInButton = styled.div`
     color: #2f73c3;
     font-weight: 600;
     cursor: pointer;
-    padding: 7px 20px;
-    border: 1.5px solid #2f73c3;
-    border-radius: 20px;
+    padding: 0.7rem 2rem;
+    border: 0.15rem solid #2f73c3;
+    border-radius: 2rem;
 
     &:hover {
         background-color: #eaf4fe;
-        border: 2px solid #2f73c3;
+        border: 0.2rem solid #2f73c3;
     }
 `;
 
 const Banner = styled.div`
-    padding: 16px 7.5%;
-    font-size: 20px;
+    padding: 1.6rem 10rem;
+    font-size: 2rem;
     line-height: 1.4;
     font-weight: 400;
     color: #000000;
@@ -62,12 +62,13 @@ const Banner = styled.div`
 `;
 
 const WelcomeTag = styled.h1`
-    width: 80%;
-    padding: 0 0 30px 11.5%;
+    width: 80rem;
     color: #2977c9;
-    font-size: 55px;
+    font-size: 5.5rem;
     font-weight: 450;
-    line-height: 60px;
+    padding: 4rem 0 3rem 10rem;
+    margin-bottom: 2rem;
+    line-height: 6rem;
 `;
 
 const FlexDiv = styled.div`
@@ -76,44 +77,44 @@ const FlexDiv = styled.div`
 
 const Box = styled.div`
     display: flex;
-    width: 360px;
-    height: 30px;
-    font-size: 18px;
-    line-height: 30px;
-    border: 0.5px solid #d8d8d8;
-    border-radius: 7px;
+    width: 40rem;
+    height: 6rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    border: 0.05rem solid #d8d8d8;
+    border-radius: 0.7rem;
     justify-content: space-between;
-    margin: 14px 0 14px 11.5%;
-    padding: 16px;
+    margin: 2rem 0 2rem 10rem;
+    padding: 1.6rem;
     cursor: pointer;
 
     &:hover {
-        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 0.3rem 0.5rem 0 rgba(0, 0, 0, 0.19);
     }
 `;
 
 const SearchJobs = styled.div`
-    height: 450px;
-    margin-top: -146px;
-    padding: 200px 0 0 7.5%;
+    height: 55rem;
+    margin-top: -13.6rem;
+    padding: 18rem 0 15rem 10rem;
     background-color: #faf9f7;
 `;
 
 const Heading2 = styled.div`
-    width: 400px;
-    font-size: 50px;
+    width: 40rem;
+    font-size: 5rem;
     font-weight: 450;
-    line-height: 55px;
+    line-height: 5.5rem;
 `;
 
 const Jobs = styled.div`
     color: #5d5d5c;
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 500;
     cursor: pointer;
-    padding: 7px 20px;
-    margin: 8px 8px 8px 0;
-    border-radius: 20px;
+    padding: 0.7rem 2rem;
+    margin: 0.8rem 0.8rem 0.8rem 0;
+    border-radius: 2rem;
     background-color: #e6e6e4;
     z-index: 1;
 
@@ -128,7 +129,7 @@ export const LandingPage = () => {
         <div>
             <Navigation>
                 <div>
-                    <img src = "https://logos-world.net/wp-content/uploads/2020/04/Linkedin-Logo.png" alt = "Linkedin Logo" height = "80px"/>
+                    <img src = {LinkedIn} alt = "Linkedin Logo" height = "38" style = {{cursor : "pointer"}}/>
                 </div>
                 <RightSection>
                     <JoinButtons>Join with resume</JoinButtons>
@@ -139,7 +140,7 @@ export const LandingPage = () => {
             </Navigation>
             
             <Banner>
-                <div style = {{cursor: "pointer", width: "590px"}}>
+                <div style = {{cursor: "pointer", width: "59rem"}}>
                     Help and resources during the COVID-19 outbreak. <u>Learn More</u> ❯
                 </div>
             </Banner>
@@ -174,18 +175,18 @@ export const LandingPage = () => {
                         </Box>
                     </div>
                     <div>
-                        <img src="https://static-exp1.licdn.com/sc/h/3m4tgpbdz7gbldapvl63mrnxz" alt="Community" height = "680px" style = {{marginLeft : "-200px", paddingTop : "30px", zIndex : "2", position : "relative"}}/>
+                        <img src="https://static-exp1.licdn.com/sc/h/3m4tgpbdz7gbldapvl63mrnxz" alt="Community" height = "680" style = {{marginLeft : "-10rem", paddingTop : "4rem", zIndex : "2", position : "relative"}}/>
                     </div>
                 </FlexDiv>
 
                 <FlexDiv>
-                    <SearchJobs style = {{width: "25%"}}>
+                    <SearchJobs style = {{width: "50rem"}}>
                         <Heading2>
                             Find open jobs and internships
                         </Heading2>
                     </SearchJobs>
-                    <SearchJobs style = {{width: "75%"}}>
-                        <div style = {{color : "#656564", fontWeight : "500", paddingBottom : "15px"}}>
+                    <SearchJobs style = {{width: "85rem"}}>
+                        <div style = {{color : "#656564", fontWeight : "500", paddingBottom : "1.5rem", fontSize : "1.5rem"}}>
                             SUGGESTED SEARCHES
                         </div>
 
@@ -208,7 +209,7 @@ export const LandingPage = () => {
                             <Jobs>Human Resource</Jobs>
                         </FlexDiv>
 
-                        <div style = {{color : "#656564", fontWeight : "500", paddingTop : "15px", cursor : "pointer", width: "130px"}}>
+                        <div style = {{color : "#656564", fontWeight : "500", paddingTop : "1.5rem", cursor : "pointer", width: "13rem", fontSize : "1.5rem"}}>
                             Show More <b> ⌵ </b>
                         </div>
                     </SearchJobs>
