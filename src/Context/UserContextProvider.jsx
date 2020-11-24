@@ -43,14 +43,14 @@ export class UserContextProvider extends Component {
 
     }
 
-    createPost=({user_id,post_img,post,create_time})=>{
+    createPost=({user_id,img,post,create_time})=>{
         axios.post('http://localhost:8000/posts',{
             user_id,
             post,
             create_time,
-            post_img
+            img
         })
-        .then(res=>console.log(res.data))
+        .then(res=>alert("Post Success"))
         .catch(res=>console.log(res,"errr"))
     }
 

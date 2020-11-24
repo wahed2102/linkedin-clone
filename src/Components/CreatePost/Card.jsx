@@ -18,12 +18,13 @@ const Container = styled.div`
 const Header = styled.div`
     border-bottom:1px solid gray;
     font-size:20px;
-    display:block;
+    display:flex;
     padding:1.6rem 2.4rem;
     line-height:1.5;
     font-weight:400;
     color:rgba(0,0,0,.9);
     font-style:normal;
+    justify-content:space-between;
 
 `
 const Body = styled.div`
@@ -47,7 +48,7 @@ const TextArea = styled.textarea`
 
 const Footer = styled.div`\
     display:flex;
-    flex-direction:row-reverse;
+    justify-content:space-between;
     padding:1rem 2rem
 `
 const Button = styled.button`
@@ -58,7 +59,15 @@ const Button = styled.button`
     outline:none;
     border:none;    
     ${props=>props.disabled?`background-color:#bfbfbf;`:`background-color:#004182;`}
+`
 
+const Close = styled.div`
+    border-radius:100%;
+    cursor:pointer;
+    padding:5px;
+    &:hover{
+        background-color:#bfbfbf
+    }
 `
 export  class Card extends Component {
 
@@ -67,31 +76,39 @@ export  class Card extends Component {
         this.state={
             post:"",
             user_id:1,
-            post_img:null
+            img:""
         }
+        this.photo=React.createRef()
+        this.handlePost = this.handlePost.bind(this)
     }
 
-handleChnage=(e)=>{
-    const {name,value} = e.target
+handleChange=(e)=>{
+    const {name,value,type} = e.target
+    const val=type==="file"? URL.createObjectURL(e.target.files[0]):value
     this.setState({
-        [name]:value
+        [name]:val
     })
 }
-handlePost=()=>{
-    const {post,post_img,user_id} =  this.state
+handlePost(e){
+    const {post,img,user_id} =  this.state
+    const {handleModal} = this.props
     const {createPost} = this.context
     const event = new Date;
     const create_time = event.toLocaleTimeString('en-US') 
-    createPost({user_id,post_img,post,create_time})
+    createPost({user_id,img,post,create_time})
+    {handleModal(e)}
 
 }
 
     render() {
-        const {post} = this.state
+        const {handleModal } = this.props
+        const {post,img} = this.state
+        console.log(img)
         return (
             <Container>
                 <Header >
-                    Create a post
+                    <div>Create a link</div>
+                    <Close onClick={handleModal} style>✖</Close>
                 </Header>
                 <Body>
                     <InfoBox>
@@ -101,11 +118,12 @@ handlePost=()=>{
                             
                         </div>
                     </InfoBox>
-                    <TextArea name="post" value={post} rows="5" cols="50" placeholder="What do you want to talk about?" onChange={(e)=>this.handleChnage(e)} />
+                    <TextArea name="post" value={post} rows="5" cols="50" placeholder="What do you want to talk about?" onChange={(e)=>this.handleChange(e)} />
                 </Body>
                 <Footer>
-                    {/* {console.log(text==="")} */}
-                    <Button onClick={()=>this.handlePost()}  disabled={post.length===0?true:false} >POST</Button>
+                    <input ref={this.photo}  onChange={this.handleChange} name="img" type="file" />
+                    {/* {img && <img src={img} width="30" />} */}
+                    <Button onClick={this.handlePost}  disabled={post.length===0 && img===""?true:false} >POST</Button>
                 </Footer>
                 
             </Container>
