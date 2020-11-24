@@ -1,10 +1,15 @@
 import React from "react";
 import "./App.css";
+import { CreatePost } from "./Components/CreatePost/CreatePost";
+import { Login } from "./Components/Login";
+import { ProfilePic } from "./Components/ProfilePic";
 
 function App() {
   return (
     <div>
-      <h1>Hi</h1>
+      <CreatePost />
+      {/* <ProfilePic/> */}
+      {/* <Login /> */}
     </div>
   );
 }
