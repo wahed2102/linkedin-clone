@@ -1,44 +1,123 @@
-import React from "react"
-import styled from "styled-components"
-import styles from "./SigninPage.module.css"
+import React, { Component } from 'react';
+import styles from "./SigninPage.module.css";
+import LinkedIn from "../images/LinkedIn.png";
 
-export class SigninPage extends React.Component {
-    constructor(props){
+export class SigninPage extends Component {
+    constructor(props) {
         super(props)
-        this.state={
-            text:"Show"
+        this.state = {
+            email : "",
+            password : "",
+            password_type: "password",
+            button_text : "Show"
         }
-        this.handleClick=this.handleClick.bind(this)
     }
-    handleClick(e){
+
+    handleChange = (e) => {
+        const{name, value} = e.target;
+        
+        this.setState({
+            [name] : value
+        })
+    }
+
+    handleSubmit = (e) => {
         e.preventDefault();
-console.log(e.target.textContent)
-if(e.target.textContent==="Show") this.setState({text:"Hide"})
-else this.setState({text:"Show"})
+
+        const {email, password} = this.state;
+
     }
+
+    handlePasswordType = () => {
+        const {password_type} = this.state;
+
+        if(password_type === "password") {
+            this.setState({
+                password_type : "text"
+            })
+        }
+        else if(password_type === "text") {
+            this.setState({
+                password_type : "password"
+            })
+        }
+    }
+
+    handleButtonText = () => {
+        const {button_text} = this.state;
+
+        if(button_text === "Show") {
+            this.setState({
+                button_text : "Hide"
+            })
+        }
+        else if(button_text === "Hide") {
+            this.setState({
+                button_text : "Show"
+            })
+        }
+    } 
+    
     render() {
-        const {text}=this.state
+        const {email, password, password_type, button_text} = this.state
         return (
-           
-               <div className={styles.outer}>
-                   
-                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Linkedin-Logo.png" alt="" />
-
-                    
-
-                        <div style={{fontSize:"30px"}} >Welcome Back</div>
-                        <div className={styles.light}>Don't miss your next opportunity. Sign in to stay updated on your professional world.</div>
-                        <div> <input class="inputbox" placeholder="Email or Phone" /></div>
-                        <div> <form><input class="inputbox" style={{width:"100px",border:"none", lineHeight : "25px"}}type="password" placeholder="Password" /><button className={styles.showbtn} onClick={(e)=>this.handleClick(e)}>{text}</button></form></div>
-                        <button class="btn">Signin</button>
-                        <div className={`${styles.small}`}>forgot password?</div>
-                        <div className={styles.small}> <div style ={{color:"black"}}>New to Linkedin?</div> join now</div>
-                  
+            <div className = {styles.Container}>
+                <div>
+                    <img src = {LinkedIn} alt = "Linkedin Logo"/>
+                </div>
+                <h2>
+                    Welcome Back
+                </h2>
+                <div className = {styles.FormDescription}>
+                    Don't miss your next opportunity. Sign in to stay updated on your professional world.
                 </div>
 
-
-
-           
+                <form onSubmit = {this.handleSubmit}>
+                    <div>
+                        <input
+                            className = {styles.InputBox}
+                            name = "email"
+                            value = {email}
+                            type = "email"
+                            placeholder = "Email or Phone"
+                            onChange = {this.handleChange}
+                        />
+                    </div>
+                    <div className = {styles.PasswordInputBox}>
+                        <input
+                            className = {styles.InputBox}
+                            name = "password"
+                            value = {password}
+                            type = {password_type}
+                            placeholder = "Password"
+                            onChange = {this.handleChange}
+                        />
+                        <div 
+                            className = {styles.ShowHideButton}
+                            onClick = {this.handleButtonText}>
+                                {button_text}
+                        </div>
+                    </div>
+                    <div>
+                        <input 
+                            className = {styles.SigninButton}
+                            type = "submit"
+                            value = "Sign in"    
+                        />
+                    </div>
+                </form>
+                <div className = {styles.ForgotPasswordTag}>
+                    Forgot password?
+                </div>
+                <div className = {styles.NewtoLinkedin}>
+                    <div>
+                        New to LinkedIn?
+                    </div>
+                    <div className = {styles.Join}>
+                        Join now
+                    </div>
+                </div>
+            </div>
         )
     }
 }
