@@ -1,10 +1,13 @@
 import React from "react";
 import "./App.css";
-
+//import {News} from "./Components/News"
+import {SigninPage} from "./Components/SigninPage"
 function App() {
   return (
     <div>
-      <h1>Hi</h1>
+     
+      <SigninPage/>
+      {/*<News/>*/}
     </div>
   );
 }

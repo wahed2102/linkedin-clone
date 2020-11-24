@@ -1,0 +1,80 @@
+input {
+    width: 200px;
+    margin: auto;
+    border-radius: 5px;
+    height: 25px;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    padding:5px;
+  }
+  button {
+    background-color: rgb(42, 42, 248);
+    border-radius: 50px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    width:200px;
+    height:30px;
+    margin:auto
+  }
+  input:focus {
+    border:1px solid blue;
+  }
+  button:hover {
+    background-color:  1px solid rgb(2, 2, 112);
+    color: white;
+  }
+  img {
+    height: 50px;
+    width: 100px;
+    margin:auto
+  }
+  .outer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    margin:auto;
+    padding: 10px;
+border:1px solid red
+  }
+  .small{
+    font-size:20px;
+    color:rgb(54, 172, 235)
+  }
+  .light{
+  font-size: 20px;
+    color:rgb(170, 168, 165)
+  }
+  .welcome{
+    font-size: 1.6rem;
+    line-height: 1.75;
+    font-weight: 400;
+    color: rgba(0,0,0,0.6);
+    padding-bottom: 32px;
+  }
+  .blu{
+    color:rgb(186,218,235)
+  }
+  form{
+  border:1px solid #ccc;
+  
+  display:flex;
+  flex-direction:row;
+  width:200px;
+  margin:auto;
+  height:25px;
+/* vertical-align:middle; */
+ 
+  }
+.showbtn{
+  width:100px;
+  height:20px;
+  border:transparent;
+  background-color:transparent;
+}
+.showbtn:hover{
+  background-color: blue;
+}
