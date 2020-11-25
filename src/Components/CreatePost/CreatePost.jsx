@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Card } from './Card'
 
 const Modal = styled.div`
-    height:100vh;
+    height:100vh;   
     width:100vw;
     position:absolute;
     top:0;

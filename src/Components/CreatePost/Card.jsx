@@ -75,7 +75,6 @@ export  class Card extends Component {
         super(props)
         this.state={
             post:"",
-            user_id:1,
             img:""
         }
         this.photo=React.createRef()
@@ -90,12 +89,12 @@ handleChange=(e)=>{
     })
 }
 handlePost(e){
-    const {post,img,user_id} =  this.state
+    const {post,img} =  this.state
     const {handleModal} = this.props
-    const {createPost} = this.context
+    const {createPost,cur_uid} = this.context
     const event = new Date;
     const create_time = event.toLocaleTimeString('en-US') 
-    createPost({user_id,img,post,create_time})
+    createPost({cur_uid,img,post,create_time})
     {handleModal(e)}
 
 }
@@ -112,8 +111,8 @@ handlePost(e){
                 </Header>
                 <Body>
                     <InfoBox>
-                        <ProfilePic />
-                        <div style={{marginLeft:"14px",lineHeight:"1.5",fontSize:"1rem",fontWeight:600}} >
+                        <ProfilePic width = "44" />
+                        <div style={{marginLeft:"14px",lineHeight:"1.5",fontSize:"1rem",fontWeight:600}}   >
                             <div>Harsh</div>
                             
                         </div>
