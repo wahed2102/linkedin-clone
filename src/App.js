@@ -8,6 +8,7 @@ import { LandingPage } from "./Components/LandingPage";
 import Footer from "./Components/Footer";
 import { NavBar } from "./Components/NavBar";
 import News from "./Components/News/News";
+import Courses from "./Courses/Courses";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           marginTop: "49px",
         }}
       >
-        <div>
+        <div style={{ flexBasis: "200px" }}>
           <Profile
             name="Wahed Ali"
             alt="Wahed Ali"
@@ -35,8 +36,10 @@ function App() {
           {/* <LandingPage></LandingPage>
       <Footer /> */}
         </div>
-        <div style={{ float: "right" }}>
+        <div style={{ flexBasis: "555px" }}></div>
+        <div style={{ flexBasis: "315px" }}>
           <News />
+          <Courses />
         </div>
       </div>
     </div>

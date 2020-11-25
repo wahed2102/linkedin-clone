@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./News.module.css";
+import styles from "./Courses.module.css";
 
-const News = () => {
+const Courses = () => {
   return (
     <div className={styles.main}>
       <h2>
-        LinkedIn News
+        Today's trending courses
         <span
           style={{ float: "right", marginRight: "20px", color: "lightgray" }}
         >
@@ -23,51 +23,32 @@ const News = () => {
           </svg>
         </span>
       </h2>
-
       <ul>
         <li>
           <a href="#" className={styles.truncate}>
             <div>
               <span className={styles.news_bullet}></span>
-              Google is eyeing ShareChat: Report
+              1. Impromptu Speaking
             </div>
-            <span className={styles.news_subtext}>1d ago • 1,026 readers</span>
+            <span className={styles.news_subtext}>Todd Dewett</span>
           </a>
         </li>
         <li>
           <a href="#" className={styles.truncate}>
             <div>
               <span className={styles.news_bullet}></span>
-              Elon Musk is world's second-riches
+              2. Preparing to Lead: Developing...
             </div>
-            <span className={styles.news_subtext}>1d ago • 1,026 readers</span>
+            <span className={styles.news_subtext}>Richard Gerver</span>
           </a>
         </li>
         <li>
           <a href="#" className={styles.truncate}>
             <div>
               <span className={styles.news_bullet}></span>
-              What's next for OYO
+              3. Customer Service: Handling Abu...
             </div>
-            <span className={styles.news_subtext}>1d ago • 1,026 readers</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" className={styles.truncate}>
-            <div>
-              <span className={styles.news_bullet}></span>
-              Branded content big on OTT platforms
-            </div>
-            <span className={styles.news_subtext}>1d ago • 1,026 readers</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" className={styles.truncate}>
-            <div>
-              <span className={styles.news_bullet}></span>
-              Google is eyeing ShareChat: Report
-            </div>
-            <span className={styles.news_subtext}>1d ago • 1,026 readers</span>
+            <span className={styles.news_subtext}>David Brownlee</span>
           </a>
         </li>
       </ul>
@@ -78,4 +59,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default Courses;
