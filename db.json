@@ -3,18 +3,18 @@
     {
       "id": 1,
       "email": "wahed@gmail.com",
-      "username": "harshverma1234",
-      "password": "1234",
-      "first_name": "Harsh",
-      "last_name": "Verma",
+      "username": "wahed",
+			"password": "1234",
+      "first_name": "Wahed",
+      "last_name": "Ali",
       "headline": "",
       "country": "India",
       "industry": "Information Technology",
-      "phone": "9557098292",
-      "address": "Dsm Sugar Mill",
+      "phone": "987654321",
+      "address": "Nagpur",
       "birthday": {
-        "month": "April",
-        "date": 23
+        "month": "November",
+        "date": 29
       },
       "education": {
         "school": "Xyz Institute",

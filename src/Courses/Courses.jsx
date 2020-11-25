@@ -7,7 +7,11 @@ const Courses = () => {
       <h2>
         Today's trending courses
         <span
-          style={{ float: "right", marginRight: "20px", color: "lightgray" }}
+          style={{
+            float: "right",
+            marginRight: "20px",
+            color: "rgba(0,0,0,0.6)",
+          }}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
