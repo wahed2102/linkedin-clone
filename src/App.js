@@ -9,39 +9,18 @@ import Footer from "./Components/Footer";
 import { NavBar } from "./Components/NavBar";
 import News from "./Components/News/News";
 import Courses from "./Courses/Courses";
+import { PostButton } from "./Components/CreatePostButton.jsx/PostButton";
+import { Login } from "./Components/Login";
+import { Routes } from "./Pages/Routes";
 
 function App() {
   return (
     <div>
-      <NavBar></NavBar>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          width: "1128px",
-          margin: "0px auto",
-          marginTop: "49px",
-        }}
-      >
-        <div style={{ flexBasis: "200px" }}>
-          <Profile
-            name="Wahed Ali"
-            alt="Wahed Ali"
-            image={Photo}
-            description="Fellow - Full stack Developer Masai School Full-time"
-            background={Background}
-            connections={33}
-            viewed={16}
-          />
-          {/* <LandingPage></LandingPage>
-      <Footer /> */}
-        </div>
-        <div style={{ flexBasis: "555px" }}></div>
-        <div style={{ flexBasis: "315px" }}>
-          <News />
-          <Courses />
-        </div>
-      </div>
+      {/* <PostButton /> */}
+      {/* <ProfilePic/> */}
+      {/* <Login /> */}
+
+      <Routes></Routes>
     </div>
   );
 }

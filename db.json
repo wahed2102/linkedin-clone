@@ -2,87 +2,72 @@
   "users": [
     {
       "id": 1,
-      "email": "hverma@gmail.com",
+      "email": "wahed@gmail.com",
       "username": "harshverma1234",
       "password": "1234",
-      "userDetails": [
-        {
-          "first_name": "Harsh",
-          "last_name": "Verma",
-          "headline": "",
-          "country": "India",
-          "industry": "Information Technology",
-          "phone": "9557098292",
-          "address": "Dsm Sugar Mill",
-          "email": "hverma@gmail.com",
-          "birthday": {
-            "month": "April",
-            "date": 23
-          },
-          "education": {
-            "school": "Xyz Institute",
-            "degree": "BCA",
-            "field_of_study": "Information Technology",
-            "start_year": "2019",
-            "end_year": "2020",
-            "description": ""
-          },
-          "profile_img": "/",
-          "bg_img": "/",
-          "skills": [
-            "HTML",
-            "CSS",
-            "Python"
-          ],
-          "following": [
-            {
-              "user_id": "2",
-              "isAccepted": false
-            }
-          ]
-        }
-      ]
+      "first_name": "Harsh",
+      "last_name": "Verma",
+      "headline": "",
+      "country": "India",
+      "industry": "Information Technology",
+      "phone": "9557098292",
+      "address": "Dsm Sugar Mill",
+      "birthday": {
+        "month": "April",
+        "date": 23
+      },
+      "education": {
+        "school": "Xyz Institute",
+        "degree": "BCA",
+        "field_of_study": "Information Technology",
+        "start_year": "2019",
+        "end_year": "2020",
+        "description": ""
+      },
+      "profile_img": "/",
+      "bg_img": "/",
+      "skills": [
+        "HTML",
+        "CSS",
+        "Python"
+      ],
+      "following": [2, 3 ]  
     },
     {
       "id": 2,
       "email": "harsh@gmail.com",
       "username": "harshverma1234",
       "password": "1234",
-      "userDetails": [
+      "first_name": "Harsh",
+      "last_name": "Verma",
+      "headline": "",
+      "country": "India",
+      "industry": "Information Technology",
+      "phone": "9557098292",
+      "address": "Dsm Sugar Mill",
+      "birthday": {
+        "month": "April",
+        "date": 23
+      },
+      "education": {
+        "school": "Xyz Institute",
+        "degree": "BCA",
+        "field_of_study": "Information Technology",
+        "start_year": "2019",
+        "end_year": "2020",
+        "description": ""
+      },
+      "profile_img": "/",
+      "bg_img": "/",
+      "skills": [
+        "HTML",
+        "CSS",
+        "Python"
+      ],
+      "following": [
         {
-          "first_name": "Harsh",
-          "last_name": "Verma",
-          "headline": "",
-          "country": "India",
-          "industry": "Information Technology",
-          "phone": "9557098292",
-          "address": "Dsm Sugar Mill",
-          "email": "hverma@gmail.com",
-          "birthday": {
-            "month": "April",
-            "date": 23
-          },
-          "education": {
-            "school": "Xyz Institute",
-            "degree": "BCA",
-            "field_of_study": "Information Technology",
-            "start_year": "2019",
-            "end_year": "2020",
-            "description": ""
-          },
-          "profile_img": "/",
-          "bg_img": "/",
-          "skills": [
-            "HTML",
-            "CSS",
-            "Python"
-          ],
-          "following": [
-            {
-              "user_id": "2",
-              "isAccepted": false
-            }
-          ]
+          "user_id": "2",
+          "isAccepted": false
         }
       ]
     },
@@ -91,41 +76,36 @@
       "email": "verma@gmail.com",
       "username": "harshverma1234",
       "password": "1234",
-      "userDetails": [
+      "first_name": "Harsh",
+      "last_name": "Verma",
+      "headline": "",
+      "country": "India",
+      "industry": "Information Technology",
+      "phone": "9557098292",
+      "address": "Dsm Sugar Mill",
+      "birthday": {
+        "month": "April",
+        "date": 23
+      },
+      "education": {
+        "school": "Xyz Institute",
+        "degree": "BCA",
+        "field_of_study": "Information Technology",
+        "start_year": "2019",
+        "end_year": "2020",
+        "description": ""
+      },
+      "profile_img": "/",
+      "bg_img": "/",
+      "skills": [
+        "HTML",
+        "CSS",
+        "Python"
+      ],
+      "following": [
         {
-          "first_name": "Harsh",
-          "last_name": "Verma",
-          "headline": "",
-          "country": "India",
-          "industry": "Information Technology",
-          "phone": "9557098292",
-          "address": "Dsm Sugar Mill",
-          "email": "hverma@gmail.com",
-          "birthday": {
-            "month": "April",
-            "date": 23
-          },
-          "education": {
-            "school": "Xyz Institute",
-            "degree": "BCA",
-            "field_of_study": "Information Technology",
-            "start_year": "2019",
-            "end_year": "2020",
-            "description": ""
-          },
-          "profile_img": "/",
-          "bg_img": "/",
-          "skills": [
-            "HTML",
-            "CSS",
-            "Python"
-          ],
-          "following": [
-            {
-              "user_id": "2",
-              "isAccepted": false
-            }
-          ]
+          "user_id": "2",
+          "isAccepted": false
         }
       ]
     },
@@ -134,41 +114,36 @@
       "email": "harshverma@gmail.com",
       "username": "harshverma1234",
       "password": "1234",
-      "userDetails": [
+      "first_name": "Harsh",
+      "last_name": "Verma",
+      "headline": "",
+      "country": "India",
+      "industry": "Information Technology",
+      "phone": "9557098292",
+      "address": "Dsm Sugar Mill",
+      "birthday": {
+        "month": "April",
+        "date": 23
+      },
+      "education": {
+        "school": "Xyz Institute",
+        "degree": "BCA",
+        "field_of_study": "Information Technology",
+        "start_year": "2019",
+        "end_year": "2020",
+        "description": ""
+      },
+      "profile_img": "/",
+      "bg_img": "/",
+      "skills": [
+        "HTML",
+        "CSS",
+        "Python"
+      ],
+      "following": [
         {
-          "first_name": "Harsh",
-          "last_name": "Verma",
-          "headline": "",
-          "country": "India",
-          "industry": "Information Technology",
-          "phone": "9557098292",
-          "address": "Dsm Sugar Mill",
-          "email": "hverma@gmail.com",
-          "birthday": {
-            "month": "April",
-            "date": 23
-          },
-          "education": {
-            "school": "Xyz Institute",
-            "degree": "BCA",
-            "field_of_study": "Information Technology",
-            "start_year": "2019",
-            "end_year": "2020",
-            "description": ""
-          },
-          "profile_img": "/",
-          "bg_img": "/",
-          "skills": [
-            "HTML",
-            "CSS",
-            "Python"
-          ],
-          "following": [
-            {
-              "user_id": "2",
-              "isAccepted": false
-            }
-          ]
+          "user_id": "2",
+          "isAccepted": false
         }
       ]
     },
@@ -177,55 +152,50 @@
       "email": "vermaharsh@gmail.com",
       "username": "harshverma1234",
       "password": "1234",
-      "userDetails": [
+      "first_name": "Harsh",
+      "last_name": "Verma",
+      "headline": "",
+      "country": "India",
+      "industry": "Information Technology",
+      "phone": "9557098292",
+      "address": "Dsm Sugar Mill",
+      "birthday": {
+        "month": "April",
+        "date": 23
+      },
+      "education": {
+        "school": "Xyz Institute",
+        "degree": "BCA",
+        "field_of_study": "Information Technology",
+        "start_year": "2019",
+        "end_year": "2020",
+        "description": ""
+      },
+      "profile_img": "/",
+      "bg_img": "/",
+      "skills": [
+        "HTML",
+        "CSS",
+        "Python"
+      ],
+      "following": [
         {
-          "first_name": "Harsh",
-          "last_name": "Verma",
-          "headline": "",
-          "country": "India",
-          "industry": "Information Technology",
-          "phone": "9557098292",
-          "address": "Dsm Sugar Mill",
-          "email": "hverma@gmail.com",
-          "birthday": {
-            "month": "April",
-            "date": 23
-          },
-          "education": {
-            "school": "Xyz Institute",
-            "degree": "BCA",
-            "field_of_study": "Information Technology",
-            "start_year": "2019",
-            "end_year": "2020",
-            "description": ""
-          },
-          "profile_img": "/",
-          "bg_img": "/",
-          "skills": [
-            "HTML",
-            "CSS",
-            "Python"
-          ],
-          "following": [
-            {
-              "user_id": "2",
-              "isAccepted": false
-            }
-          ]
+          "user_id": "2",
+          "isAccepted": false
         }
       ]
     }
   ],
   "posts": [
     {
-      "user_id": 1,
+      "user_id": 2,
       "id": 1001,
       "post_img": "",
       "create_time": "",
       "post": ""
     },
     {
-      "user_id": 1,
+      "user_id": 2,
       "post": "testing post",
       "create_time": "5:19:46 PM",
       "post_img": null,

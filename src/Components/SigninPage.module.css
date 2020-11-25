@@ -1,0 +1,110 @@
+.Container {
+    width: 60rem;
+    margin: 9rem 38rem;
+    text-align: center;
+}
+
+.Logo {
+    height : 2.3rem;
+    margin-bottom: 3rem;
+}
+
+.Title {
+    font-size: 2.7rem;
+}
+
+.FormDescription {
+    font-size: 1.7rem;
+    color: #676797;
+    margin: 1.5rem 0;
+}
+
+.InputBox {
+    height: 5rem;
+    width: 36rem;
+    margin: 1rem 0;
+    padding-left: 1rem;
+    font-size: 1.8rem;
+    border: 1px solid black;
+    border-radius: 0.6rem;
+}
+
+.InputBox:focus {
+    border: 1px solid #0a66c2;
+    background-color: #e8f0fe;
+}
+
+.ShowHideButton {
+    width: 5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    color: #0a66c2;
+    margin-left: -5.5rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.ShowHideButton:hover {
+    background-color: #cbe1f7;
+    border-radius: 2rem;
+}
+
+.PasswordInputBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -0.5rem;
+}
+
+.SigninButton {
+    height: 5rem;
+    width: 36rem;
+    margin: 1rem 0;
+    padding-left: 1rem;
+    font-size: 1.8rem;
+    border: 0;
+    border-radius: 10rem;
+    color: white;
+    background-color: #0a66c2;
+    cursor: pointer;
+    /* outline: none; */
+}
+
+.SigninButton:hover {
+    background-color: #094b8d;
+}
+
+.ForgotPasswordTag {
+    width: 15rem;
+    height: 3rem;
+    line-height: 3rem;
+    color: #0a66c2;
+    font-size: 1.8rem;
+    margin: 1rem 23rem 1rem;
+    cursor: pointer;
+}
+
+.ForgotPasswordTag:hover {
+    background-color: #cbe1f7;
+    border-radius: 2rem;
+}
+
+.NewtoLinkedin {
+    display: flex;
+    width: 35rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    margin: 0 20.5rem;
+}
+
+.Join {
+    color: #0a66c2;
+    padding-left: 0.5rem;
+    cursor: pointer;
+}
+
+.SignUpError{
+    color:red;
+    font-size:1.4rem;
+}

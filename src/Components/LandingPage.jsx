@@ -1,6 +1,8 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import LinkedIn from "../images/LinkedIn.png";
+import Footer from "./Footer";
 
 const Navigation = styled.div`
     display: flex;
@@ -135,7 +137,9 @@ export const LandingPage = () => {
                     <JoinButtons>Join with resume</JoinButtons>
                     <Seperator>|</Seperator>
                     <JoinButtons>Join now</JoinButtons>
-                    <SignInButton>Sign in</SignInButton>
+                    <NavLink to = "/signin" style = {{textDecoration : "none"}}>
+                        <SignInButton>Sign in</SignInButton>
+                    </NavLink>
                 </RightSection>
             </Navigation>
             
@@ -215,6 +219,7 @@ export const LandingPage = () => {
                     </SearchJobs>
                 </FlexDiv>
             </div>
+            <Footer></Footer>
         </div>
     )
 }
