@@ -8,10 +8,14 @@ const Pic = styled.div`
 `
 
 export class ProfilePic extends Component {
+    constructor(props){
+        super(props)
+    }
     render() {
+        const  {width} = this.props
         return (
             <Pic>
-                <img width="44" src={profile} alt="" style={{borderRadius:"100%"}}/>
+                <img width={width} src={profile} alt="" style={{borderRadius:"100%"}}/>
                 {/* {profile} */}
             </Pic>
         )

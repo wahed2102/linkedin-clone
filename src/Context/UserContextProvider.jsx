@@ -8,7 +8,10 @@ export class UserContextProvider extends Component {
         this.state={
             isAuth :false,
             users:[],
-            posts:[]
+            posts:[],
+            cur_uid:null,
+            cur_user:[],
+            following:[]
 
         }
     }
@@ -33,13 +36,15 @@ export class UserContextProvider extends Component {
 
         const {users} = this.state
 
-        users?.map(item=>{
-            if(item.email===email && item.password === password)
-            {
-                alert(item.email)
-            }
+        const verify =  users?.find(item=>item.email===email && item.password === password)
+        console.log(verify)
 
+        this.setState({
+            cur_user:verify,
+            cur_uid:verify.id,
+            following:verify.following
         })
+    
 
     }
 
