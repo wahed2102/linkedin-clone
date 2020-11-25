@@ -1,14 +1,14 @@
 .main {
   width: 21.6rem;
   padding: 0;
-  margin-top: 49px;
+  /* margin-top: 49px; */
   margin-bottom: 8px !important;
   text-align: center;
   font-family: Roboto, sans-serif;
   font-size: 2rem;
   overflow: hidden;
   border: 1px solid lightgray;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   background-color: #fff;
 }
 .background {
