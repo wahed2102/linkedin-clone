@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from "./SigninPage.module.css";
 import LinkedIn from "../images/LinkedIn.png";
+import Footer from './Footer';
 
 export class SigninPage extends Component {
     constructor(props) {
@@ -61,62 +62,65 @@ export class SigninPage extends Component {
     render() {
         const {email, password, password_type, button_text} = this.state
         return (
-            <div className = {styles.Container}>
-                <div>
-                    <img src = {LinkedIn} alt = "Linkedin Logo"/>
-                </div>
-                <h2>
-                    Welcome Back
-                </h2>
-                <div className = {styles.FormDescription}>
-                    Don't miss your next opportunity. Sign in to stay updated on your professional world.
-                </div>
-
-                <form onSubmit = {this.handleSubmit}>
+            <div>
+                <div className = {styles.Container}>
                     <div>
-                        <input
-                            className = {styles.InputBox}
-                            name = "email"
-                            value = {email}
-                            type = "email"
-                            placeholder = "Email or Phone"
-                            onChange = {this.handleChange}
-                        />
+                        <img className = {styles.Logo} src = {LinkedIn} alt = "Linkedin Logo"/>
                     </div>
-                    <div className = {styles.PasswordInputBox}>
-                        <input
-                            className = {styles.InputBox}
-                            name = "password"
-                            value = {password}
-                            type = {password_type}
-                            placeholder = "Password"
-                            onChange = {this.handleChange}
-                        />
-                        <div 
-                            className = {styles.ShowHideButton}
-                            onClick = {this.handleButtonText}>
-                                {button_text}
+                    <h2 className = {styles.Title}>
+                        Welcome Back
+                    </h2>
+                    <div className = {styles.FormDescription}>
+                        Don't miss your next opportunity. Sign in to stay updated on your professional world.
+                    </div>
+
+                    <form onSubmit = {this.handleSubmit}>
+                        <div>
+                            <input
+                                className = {styles.InputBox}
+                                name = "email"
+                                value = {email}
+                                type = "email"
+                                placeholder = "Email or Phone"
+                                onChange = {this.handleChange}
+                            />
+                        </div>
+                        <div className = {styles.PasswordInputBox}>
+                            <input
+                                className = {styles.InputBox}
+                                name = "password"
+                                value = {password}
+                                type = {password_type}
+                                placeholder = "Password"
+                                onChange = {this.handleChange}
+                            />
+                            <div 
+                                className = {styles.ShowHideButton}
+                                onClick = {this.handleButtonText}>
+                                    {button_text}
+                            </div>
+                        </div>
+                        <div>
+                            <input 
+                                className = {styles.SigninButton}
+                                type = "submit"
+                                value = "Sign in"    
+                            />
+                        </div>
+                    </form>
+                    <div className = {styles.ForgotPasswordTag}>
+                        Forgot password?
+                    </div>
+                    <div className = {styles.NewtoLinkedin}>
+                        <div>
+                            New to LinkedIn?
+                        </div>
+                        <div className = {styles.Join}>
+                            Join now
                         </div>
                     </div>
-                    <div>
-                        <input 
-                            className = {styles.SigninButton}
-                            type = "submit"
-                            value = "Sign in"    
-                        />
-                    </div>
-                </form>
-                <div className = {styles.ForgotPasswordTag}>
-                    Forgot password?
                 </div>
-                <div className = {styles.NewtoLinkedin}>
-                    <div>
-                        New to LinkedIn?
-                    </div>
-                    <div className = {styles.Join}>
-                        Join now
-                    </div>
-                </div>
+                <Footer></Footer>
             </div>
         )
     }

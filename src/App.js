@@ -1,15 +1,11 @@
 import React from "react";
 import "./App.css";
-import {SigninPage} from "./Components/SigninPage"
-import { LandingPage } from "./Components/LandingPage";
-import Footer from "./Components/Footer";
+import { Routes } from "./Pages/Routes";
 
 function App() {
   return (
     <div>     
-      <SigninPage/>
-      <LandingPage></LandingPage>
-      <Footer />
+      <Routes></Routes>
     </div>
   )
 }
