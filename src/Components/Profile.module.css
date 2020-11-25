@@ -1,6 +1,7 @@
 .main {
   width: 21.6rem;
   padding: 0;
+  margin-top: 49px;
   margin-bottom: 8px !important;
   text-align: center;
   font-family: Roboto, sans-serif;
@@ -8,12 +9,15 @@
   overflow: hidden;
   border: 1px solid lightgray;
   border-radius: 0.5rem;
+  background-color: #fff;
 }
 .background {
   /* height: 5.4rem; */
   padding: 2.7rem 0;
   background: url("/src/images/photo_background.png");
-  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 462px;
 }
 .name {
   width: 192px;
