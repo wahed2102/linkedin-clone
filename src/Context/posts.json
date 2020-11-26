@@ -1,0 +1,48 @@
+{
+    "posts" : [
+        {
+            "id" : 1,
+            "name" : "Nikhil Narayan",
+            "title" : "Creative Director at Ogilvy. Content Creator at large.",
+            "profile_pic" : "https://media-exp1.licdn.com/dms/image/C4D03AQHXldUxuWfuMQ/profile-displayphoto-shrink_100_100/0/1595440487798?e=1611792000&v=beta&t=ZVMGHGJ3GcIC5XQeHvJmAZHhlCVpmWW5upok3e5WvOQ",
+            "date" : "1w",
+            "likes" : 622,
+            "data" : "Most people in the creative department don't really have a soft spot for their account management/client servicing counterparts. It is an open secret in the advertising industry. Not the ideal scenario, but that is the unfortunate truth. What could be the reason behind this animosity?"
+        },
+        {
+            "id" : 2,
+            "name" : "Aarushi Chawla",
+            "title" : "People Operations Manager at Xeno. Building a strong People-Oriented culture at Xeno.",
+            "profile_pic" : "https://media-exp1.licdn.com/dms/image/C5635AQGUIZqRLI6pwQ/profile-framedphoto-shrink_100_100/0?e=1606402800&v=beta&t=uTAYk9Vve3FFPxrDtn-wab0U_jWuhcdctid3mnYUDOA",
+            "date" : "6d",
+            "likes" : 341,
+            "data" : "Xeno is hiring for the position of Frontend Developer Intern & Software Testing Intern. If you hate the work around the work & just want to passionately keep coding and keep scaling yourself then this is the perfect opportunity for you."
+        },
+        {
+            "id" : 4,
+            "name" : "Tanay Valvi",
+            "title" : "Campus Ambassador at E-cell IIT Roorkee",
+            "profile_pic" : "https://media-exp1.licdn.com/dms/image/C5603AQF54_69AoZePg/profile-displayphoto-shrink_100_100/0/1602059304912?e=1611792000&v=beta&t=xHWvqDl-_TkHjjXwYPAGAJugu473Xze0D92vj-cGQEk",
+            "date" : "21h",
+            "likes" : 2331,
+            "data" : "Feeling so excited as I got Completion letter for ISP19 program Internshala Student partner"
+        },
+        {
+            "id" : 5,
+            "name" : "Andrew Brown",
+            "title" : "CEO of ExamPro, AWS Community Hero and #100DaysOfCloud Core-Team",
+            "profile_pic" : "https://media-exp1.licdn.com/dms/image/C4E03AQGLbmTz4hFsjQ/profile-displayphoto-shrink_100_100/0/1597080137643?e=1611792000&v=beta&t=4Dw34rTN6UBXU4aZoc4D0tb7CHcfHKFTOP87Z1LLI1A",
+            "date" : "1mo",
+            "likes" : 227,
+            "data" : "Bow wow wow yippie yo yippie yay"
+        }
+    ],
+
+    "comments" : [
+        {
+            "post_id" : 1,
+            "id" : 1,
+            "data" : "hello"
+        }
+    ]
+}
