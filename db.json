@@ -4,9 +4,12 @@
       "id": 1,
       "email": "wahed@gmail.com",
       "username": "wahed",
-			"password": "1234",
+      "password": "1234",
       "first_name": "Wahed",
       "last_name": "Ali",
+      "description": "Fellow - Full Stack Developer",
+      "connections": 23,
+      "viewed": 30,
       "headline": "",
       "country": "India",
       "industry": "Information Technology",
@@ -31,7 +34,10 @@
         "CSS",
         "Python"
       ],
-      "following": [2, 3 ]  
+      "following": [
+        2,
+        3
+      ]
     },
     {
       "id": 2,
@@ -188,110 +194,92 @@
   ],
   "posts": [
     {
-      "user_id": 2,
-      "id": 1001,
-      "post_img": "",
-      "create_time": "",
-      "post": ""
+      "id": 1,
+      "name": "Nikhil Narayan",
+      "title": "Creative Director at Ogilvy. Content Creator at large.",
+      "profile_pic": "https://media-exp1.licdn.com/dms/image/C4D03AQHXldUxuWfuMQ/profile-displayphoto-shrink_100_100/0/1595440487798?e=1611792000&v=beta&t=ZVMGHGJ3GcIC5XQeHvJmAZHhlCVpmWW5upok3e5WvOQ",
+      "date": "1w",
+      "likes": 622,
+      "comments_count": 2,
+      "data": "Most people in the creative department don't really have a soft spot for their account management/client servicing counterparts. It is an open secret in the advertising industry. Not the ideal scenario, but that is the unfortunate truth. What could be the reason behind this animosity?"
     },
     {
-      "user_id": 2,
-      "post": "testing post",
-      "create_time": "5:19:46 PM",
-      "post_img": null,
-      "id": 1002
+      "id": 2,
+      "name": "Aarushi Chawla",
+      "title": "People Operations Manager at Xeno. Building a strong People-Oriented culture at Xeno.",
+      "profile_pic": "https://media-exp1.licdn.com/dms/image/C5635AQGUIZqRLI6pwQ/profile-framedphoto-shrink_100_100/0?e=1606402800&v=beta&t=uTAYk9Vve3FFPxrDtn-wab0U_jWuhcdctid3mnYUDOA",
+      "date": "6d",
+      "likes": 341,
+      "comments_count": 9,
+      "data": "Xeno is hiring for the position of Frontend Developer Intern & Software Testing Intern. If you hate the work around the work & just want to passionately keep coding and keep scaling yourself then this is the perfect opportunity for you."
     },
     {
-      "user_id": 1,
-      "post": "test",
-      "create_time": "6:51:36 PM",
-      "post_img": null,
-      "id": 1003
+      "id": 3,
+      "name": "Tanay Valvi",
+      "title": "Campus Ambassador at E-cell IIT Roorkee",
+      "profile_pic": "https://media-exp1.licdn.com/dms/image/C5603AQF54_69AoZePg/profile-displayphoto-shrink_100_100/0/1602059304912?e=1611792000&v=beta&t=xHWvqDl-_TkHjjXwYPAGAJugu473Xze0D92vj-cGQEk",
+      "date": "21h",
+      "likes": 2331,
+      "comments_count": 4,
+      "data": "Feeling so excited as I got Completion letter for ISP19 program Internshala Student partner"
     },
     {
-      "user_id": 1,
-      "post": "test post",
-      "create_time": "7:00:02 PM",
-      "post_img": null,
-      "id": 1004
-    },
-    {
-      "user_id": 1,
-      "post": "dsdsdsds",
-      "create_time": "1:19:41 AM",
-      "post_img": "",
-      "id": 1005
-    },
-    {
-      "user_id": 1,
-      "post": "eedwd",
-      "create_time": "1:23:02 AM",
-      "img": "",
-      "id": 1006
-    },
-    {
-      "user_id": 1,
-      "post": "dddf",
-      "create_time": "1:24:10 AM",
-      "img": "",
-      "id": 1007
-    },
-    {
-      "user_id": 1,
-      "post": "dsd",
-      "create_time": "1:25:15 AM",
-      "img": "",
-      "id": 1008
-    },
-    {
-      "user_id": 1,
-      "post": "fdfd",
-      "create_time": "1:25:44 AM",
-      "img": "",
-      "id": 1009
-    },
-    {
-      "user_id": 1,
-      "post": "fdf",
-      "create_time": "1:27:58 AM",
-      "img": "blob:http://localhost:3000/78a6825f-8fa6-47b0-88d7-d8804c494b41",
-      "id": 1010
-    },
-    {
-      "user_id": 1,
-      "post": "fdf",
-      "create_time": "1:38:43 AM",
-      "img": "blob:http://localhost:3000/2c88ccfe-d0e5-4de4-ab4b-ccf30a050b9a",
-      "id": 1011
-    },
-    {
-      "user_id": 1,
-      "post": "post",
-      "create_time": "2:00:41 AM",
-      "img": "",
-      "id": 1012
-    },
-    {
-      "user_id": 1,
-      "post": "new post",
-      "create_time": "2:02:58 AM",
-      "img": "",
-      "id": 1013
-    },
-    {
-      "user_id": 1,
-      "post": "add image",
-      "create_time": "2:03:50 AM",
-      "img": "blob:http://localhost:3000/559bdff9-a8e2-4768-a3dd-ae0a2aaa98c8",
-      "id": 1014
+      "id": 4,
+      "name": "Andrew Brown",
+      "title": "CEO of ExamPro, AWS Community Hero and #100DaysOfCloud Core-Team",
+      "profile_pic": "https://media-exp1.licdn.com/dms/image/C4E03AQGLbmTz4hFsjQ/profile-displayphoto-shrink_100_100/0/1597080137643?e=1611792000&v=beta&t=4Dw34rTN6UBXU4aZoc4D0tb7CHcfHKFTOP87Z1LLI1A",
+      "date": "1mo",
+      "likes": 227,
+      "comments_count": 5,
+      "data": "Bow wow wow yippie yo yippie yay"
     }
   ],
   "comments": [
     {
-      "id": 2001,
-      "post_id": 1001,
-      "user_id": 2,
-      "comment": "Abc"
+      "addComments": "yes",
+      "user_id": 1,
+      "id": 2
+    },
+    {
+      "addComments": "yess",
+      "user_id": 1,
+      "id": 3
+    },
+    {
+      "post_id": 1,
+      "addComments": "okay",
+      "id": 4
+    },
+    {
+      "post_id": 3,
+      "addComments": "hello",
+      "id": 5
+    },
+    {
+      "post_id": 4,
+      "addComments": "welcome",
+      "id": 6
+    },
+    {
+      "post_id": 2,
+      "addComments": "good work",
+      "id": 7
+    },
+    {
+      "post_id": 2,
+      "addComments": "nice post",
+      "id": 8
+    },
+    {
+      "post_id": 1,
+      "addComments": "hello",
+      "id": 9
+    },
+    {
+      "post_id": 3,
+      "addComments": "Great !",
+      "user_id": 1,
+      "id": 10
     }
   ]
 }

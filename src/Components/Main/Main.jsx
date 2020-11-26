@@ -9,6 +9,7 @@ import News from "../../Components/News/News";
 import Courses from "../../Courses/Courses";
 // import { Login } from "../../Components/Login";
 import { PostButton } from "../CreatePostButton/PostButton";
+import { NewsfeedPost } from "../NewsfeedPost";
 
 const Main = () => {
 	const [user, setUser] = useState([])
@@ -40,6 +41,7 @@ const Main = () => {
         </div>
         <div style={{ flexBasis: "555px", marginLeft: 30, marginRight: 30 }}>
           <PostButton />
+          <NewsfeedPost/>
         </div>
         <div style={{ flexBasis: "315px" }}>
           <News />

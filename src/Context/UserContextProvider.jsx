@@ -1,18 +1,17 @@
 import React, { Component, createContext } from "react";
 import axios from "axios";
-
 export const UserContext = createContext();
 export class UserContextProvider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isAuth: false,
       users: [],
       posts: [],
       error: false,
       isAuth: false,
     };
     this.handleLogout = this.handleLogout.bind(this);
+    // this.handleComment = this.handleComment.bind(this);
   }
   componentDidMount() {
     axios.get("http://localhost:8000/users").then((res) =>
@@ -20,18 +19,15 @@ export class UserContextProvider extends Component {
         users: res.data,
       })
     );
-
     axios.get("http://localhost:8000/posts").then((res) =>
       this.setState({
         posts: res.data,
       })
     );
   }
-
   authenticate = ({ email, password }) => {
     console.log(email, password);
     const { users } = this.state;
-
     const user = users?.find(
       (item) => item.email === email && item.password === password
     );
@@ -50,7 +46,6 @@ export class UserContextProvider extends Component {
       });
     }
   };
-
   createPost = ({ user_id, img, post, create_time }) => {
     axios
       .post("http://localhost:8000/posts", {
@@ -62,16 +57,14 @@ export class UserContextProvider extends Component {
       .then((res) => alert("Post Success"))
       .catch((res) => console.log(res, "errr"));
   };
-
   handleLogout() {
     this.setState({
       isAuth: false,
     });
   }
-
   render() {
-    const { authenticate, createPost, handleLogout } = this;
-    const value = { authenticate, handleLogout, createPost, ...this.state };
+    const { authenticate, createPost, handleLogout, handleComment } = this;
+    const value = { authenticate, handleLogout, createPost, handleComment,...this.state };
     return (
       <UserContext.Provider value={value}>
         {this.props.children}
