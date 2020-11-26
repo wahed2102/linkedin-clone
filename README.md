@@ -12,6 +12,10 @@ Has functionality of Signin, creating a post and commenting on a post.
 
 ![screenshot](./readmeImages/ss2.PNG)
 
+<h3>Dashboard</h3>
+
+![screenshot](./readmeImages/Dashboard.PNG)
+
 ## Built With
 - HTML and CSS.
 - Javascript.
