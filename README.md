@@ -19,7 +19,9 @@ Has functionality of Signin, creating a post and commenting on a post.
 ## Built With
 - HTML and CSS.
 - Javascript.
+- NodeJS
 - React, React DOM
+- Styled Components
 - Axios
 - JSON-Server
 
