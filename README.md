@@ -1,18 +1,18 @@
 # Methane
 
-<h4 align="center">Clone of linkedin.</h4>
+<h2 align="center">Clone of linkedin.</h2>
 Has functionality of Signin, creating a post and commenting on a post.
 
-<h2>SCREENSHOTS</h2>
-<h3>Landing Page</h3>
+<h3>SCREENSHOTS</h3>
+<h4>Landing Page</h4>
 
 ![screenshot](./readmeImages/ss1.PNG)
 
-<h3>Sing In Page</h3>
+<h4>Sing In Page</h4>
 
 ![screenshot](./readmeImages/ss2.PNG)
 
-<h3>Dashboard</h3>
+<h4>Dashboard</h4>
 
 ![screenshot](./readmeImages/Dashboard.PNG)
 
