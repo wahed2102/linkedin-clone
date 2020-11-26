@@ -1,0 +1,327 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "hverma@gmail.com",
+      "username": "harshverma1234",
+      "password": "1234",
+      "userDetails": [
+        {
+          "first_name": "Harsh",
+          "last_name": "Verma",
+          "headline": "",
+          "country": "India",
+          "industry": "Information Technology",
+          "phone": "9557098292",
+          "address": "Dsm Sugar Mill",
+          "email": "hverma@gmail.com",
+          "birthday": {
+            "month": "April",
+            "date": 23
+          },
+          "education": {
+            "school": "Xyz Institute",
+            "degree": "BCA",
+            "field_of_study": "Information Technology",
+            "start_year": "2019",
+            "end_year": "2020",
+            "description": ""
+          },
+          "profile_img": "/",
+          "bg_img": "/",
+          "skills": [
+            "HTML",
+            "CSS",
+            "Python"
+          ],
+          "following": [
+            {
+              "user_id": "2",
+              "isAccepted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "email": "harsh@gmail.com",
+      "username": "harshverma1234",
+      "password": "1234",
+      "userDetails": [
+        {
+          "first_name": "Harsh",
+          "last_name": "Verma",
+          "headline": "",
+          "country": "India",
+          "industry": "Information Technology",
+          "phone": "9557098292",
+          "address": "Dsm Sugar Mill",
+          "email": "hverma@gmail.com",
+          "birthday": {
+            "month": "April",
+            "date": 23
+          },
+          "education": {
+            "school": "Xyz Institute",
+            "degree": "BCA",
+            "field_of_study": "Information Technology",
+            "start_year": "2019",
+            "end_year": "2020",
+            "description": ""
+          },
+          "profile_img": "/",
+          "bg_img": "/",
+          "skills": [
+            "HTML",
+            "CSS",
+            "Python"
+          ],
+          "following": [
+            {
+              "user_id": "2",
+              "isAccepted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "email": "verma@gmail.com",
+      "username": "harshverma1234",
+      "password": "1234",
+      "userDetails": [
+        {
+          "first_name": "Harsh",
+          "last_name": "Verma",
+          "headline": "",
+          "country": "India",
+          "industry": "Information Technology",
+          "phone": "9557098292",
+          "address": "Dsm Sugar Mill",
+          "email": "hverma@gmail.com",
+          "birthday": {
+            "month": "April",
+            "date": 23
+          },
+          "education": {
+            "school": "Xyz Institute",
+            "degree": "BCA",
+            "field_of_study": "Information Technology",
+            "start_year": "2019",
+            "end_year": "2020",
+            "description": ""
+          },
+          "profile_img": "/",
+          "bg_img": "/",
+          "skills": [
+            "HTML",
+            "CSS",
+            "Python"
+          ],
+          "following": [
+            {
+              "user_id": "2",
+              "isAccepted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "email": "harshverma@gmail.com",
+      "username": "harshverma1234",
+      "password": "1234",
+      "userDetails": [
+        {
+          "first_name": "Harsh",
+          "last_name": "Verma",
+          "headline": "",
+          "country": "India",
+          "industry": "Information Technology",
+          "phone": "9557098292",
+          "address": "Dsm Sugar Mill",
+          "email": "hverma@gmail.com",
+          "birthday": {
+            "month": "April",
+            "date": 23
+          },
+          "education": {
+            "school": "Xyz Institute",
+            "degree": "BCA",
+            "field_of_study": "Information Technology",
+            "start_year": "2019",
+            "end_year": "2020",
+            "description": ""
+          },
+          "profile_img": "/",
+          "bg_img": "/",
+          "skills": [
+            "HTML",
+            "CSS",
+            "Python"
+          ],
+          "following": [
+            {
+              "user_id": "2",
+              "isAccepted": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "email": "vermaharsh@gmail.com",
+      "username": "harshverma1234",
+      "password": "1234",
+      "userDetails": [
+        {
+          "first_name": "Harsh",
+          "last_name": "Verma",
+          "headline": "",
+          "country": "India",
+          "industry": "Information Technology",
+          "phone": "9557098292",
+          "address": "Dsm Sugar Mill",
+          "email": "hverma@gmail.com",
+          "birthday": {
+            "month": "April",
+            "date": 23
+          },
+          "education": {
+            "school": "Xyz Institute",
+            "degree": "BCA",
+            "field_of_study": "Information Technology",
+            "start_year": "2019",
+            "end_year": "2020",
+            "description": ""
+          },
+          "profile_img": "/",
+          "bg_img": "/",
+          "skills": [
+            "HTML",
+            "CSS",
+            "Python"
+          ],
+          "following": [
+            {
+              "user_id": "2",
+              "isAccepted": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "user_id": 1,
+      "id": 1001,
+      "post_img": "",
+      "create_time": "",
+      "post": ""
+    },
+    {
+      "user_id": 1,
+      "post": "testing post",
+      "create_time": "5:19:46 PM",
+      "post_img": null,
+      "id": 1002
+    },
+    {
+      "user_id": 1,
+      "post": "test",
+      "create_time": "6:51:36 PM",
+      "post_img": null,
+      "id": 1003
+    },
+    {
+      "user_id": 1,
+      "post": "test post",
+      "create_time": "7:00:02 PM",
+      "post_img": null,
+      "id": 1004
+    },
+    {
+      "user_id": 1,
+      "post": "dsdsdsds",
+      "create_time": "1:19:41 AM",
+      "post_img": "",
+      "id": 1005
+    },
+    {
+      "user_id": 1,
+      "post": "eedwd",
+      "create_time": "1:23:02 AM",
+      "img": "",
+      "id": 1006
+    },
+    {
+      "user_id": 1,
+      "post": "dddf",
+      "create_time": "1:24:10 AM",
+      "img": "",
+      "id": 1007
+    },
+    {
+      "user_id": 1,
+      "post": "dsd",
+      "create_time": "1:25:15 AM",
+      "img": "",
+      "id": 1008
+    },
+    {
+      "user_id": 1,
+      "post": "fdfd",
+      "create_time": "1:25:44 AM",
+      "img": "",
+      "id": 1009
+    },
+    {
+      "user_id": 1,
+      "post": "fdf",
+      "create_time": "1:27:58 AM",
+      "img": "blob:http://localhost:3000/78a6825f-8fa6-47b0-88d7-d8804c494b41",
+      "id": 1010
+    },
+    {
+      "user_id": 1,
+      "post": "fdf",
+      "create_time": "1:38:43 AM",
+      "img": "blob:http://localhost:3000/2c88ccfe-d0e5-4de4-ab4b-ccf30a050b9a",
+      "id": 1011
+    },
+    {
+      "user_id": 1,
+      "post": "post",
+      "create_time": "2:00:41 AM",
+      "img": "",
+      "id": 1012
+    },
+    {
+      "user_id": 1,
+      "post": "new post",
+      "create_time": "2:02:58 AM",
+      "img": "",
+      "id": 1013
+    },
+    {
+      "user_id": 1,
+      "post": "add image",
+      "create_time": "2:03:50 AM",
+      "img": "blob:http://localhost:3000/559bdff9-a8e2-4768-a3dd-ae0a2aaa98c8",
+      "id": 1014
+    }
+  ],
+  "comments": [
+    {
+      "id": 2001,
+      "post_id": 1001,
+      "user_id": 2,
+      "comment": "Abc"
+    }
+  ]
+}

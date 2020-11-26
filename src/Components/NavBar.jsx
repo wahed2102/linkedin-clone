@@ -135,7 +135,12 @@ export const NavBar = () => {
             Notifications
           </Catergory>
           <Catergory>
-            <img src={Photo} alt="Me" />
+            <img
+              src={Photo}
+              alt="Me"
+              width="24px"
+              style={{ borderRadius: "50%", marginLeft: 15 }}
+            />
             Me ▼
           </Catergory>
           <Catergory>
