@@ -8,7 +8,7 @@ Has functionality of Signin, creating a post and commenting on a post.
 
 ![screenshot](./readmeImages/ss1.PNG)
 
-<h4>Sing In Page</h4>
+<h4>SignIn Page</h4>
 
 ![screenshot](./readmeImages/ss2.PNG)
 
