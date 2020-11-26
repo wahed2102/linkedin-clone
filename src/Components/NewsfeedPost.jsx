@@ -11,7 +11,7 @@ export class NewsfeedPost extends Component {
     }
 
     componentDidMount () {
-        axios.get("http://localhost:3004/posts")
+        axios.get("http://localhost:8000/posts")
         .then((res) => {
             this.setState({
                 posts: res.data
@@ -31,6 +31,7 @@ export class NewsfeedPost extends Component {
                             return (
                                 <DisplayPost
                                     key = {item.id}
+                                    id = {item.id}
                                     name = {item.name}
                                     title = {item.title}
                                     profile_pic = {item.profile_pic}
