@@ -1,0 +1,125 @@
+.Container {
+    width: 55.2rem;
+    margin: 2rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.PostContainer {
+    padding: 1rem;
+}
+
+.FriendsDetails {
+    display: flex;
+    height: 7rem;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    color: #3a3939;
+}
+
+.FollowButton {
+    width: 9rem;
+    color: #0a66c2;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 1.4rem;
+    padding: 0.5rem;
+    height: 3.2rem;
+    cursor: pointer;
+}
+
+.FollowButton:hover {
+    background-color: #e6f3ff;
+    border-radius: 0.5rem;
+}
+
+.PostData {
+    font-size: 1.5rem;
+    margin: 0 0 1.5rem 0;
+}
+
+.LikesCommentsDiv {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.15);
+}
+
+.Likes, .CommentsCount {
+    display: flex;
+    cursor: pointer;
+}
+
+.Likes:hover,.CommentsCount:hover {
+    color: #0783ff;
+    text-decoration: underline;
+}
+
+.FlexDisplay {
+    display: flex;
+}
+
+.AllFunctionButtons {
+    display: flex;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 0.1rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.AllFunctionButtons:hover {
+    background-color: #e6e6e4;
+    color: black;
+}
+
+.InputComment {
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 47rem;
+    height: 4rem;
+    border-radius: 10rem;
+    border: 0.05rem solid black;
+}
+
+/* .InputComment:focus {
+    border: 0;
+} */
+
+.EmojiImageComment {
+    margin-top : 0.8rem;
+    padding : 0.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    align-items : center;
+    cursor: pointer;
+}
+
+.EmojiImageComment:hover {
+    background-color: #e6e6e4;
+    border-radius: 100%;
+}
+
+.LoadMoreComments {
+    width: 14rem;
+    margin : 0.5rem;
+    padding: 0.5rem;
+    font-weight : 500; 
+    font-size : 1.3rem; 
+    cursor : pointer; 
+    color : #3a3939;
+}
+
+.LoadMoreComments:hover {
+    background-color: #e6e6e4;
+}
+
+.Comment {
+    width: 30rem;
+    padding: 1rem;
+    line-height: 3rem;
+    background-color: #f2f2f2;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+}

@@ -1,11 +1,13 @@
 import React from "react";
 import "./App.css";
-import { Routes } from "./Pages/Routes";
+import { NewsfeedPost } from "./Components/NewsfeedPost";
+// import { Routes } from "./Pages/Routes";
 
 function App() {
   return (
     <div>     
-      <Routes></Routes>
+      {/* <Routes></Routes> */}
+      <NewsfeedPost></NewsfeedPost>
     </div>
   )
 }
