@@ -1,6 +1,6 @@
 # Methane
 
-<h2 align="center">Clone of linkedin.</h2>
+<h2 align="center">LinkedIn clone.</h2>
 Has functionality of Signin, creating a post and commenting on a post.
 
 <h3>SCREENSHOTS</h3>
