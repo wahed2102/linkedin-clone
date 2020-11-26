@@ -1,7 +1,8 @@
 .Container {
     width: 55.2rem;
-    margin: 2rem;
-    border: 1px solid black;
+    margin-bottom: 2rem;
+    background-color: white;
+    border: 1px solid lightgrey;
     border-radius: 1rem;
 }
 
@@ -122,4 +123,5 @@
     background-color: #f2f2f2;
     font-size: 1.4rem;
     border-radius: 1rem;
+    margin-bottom: 1rem;
 }

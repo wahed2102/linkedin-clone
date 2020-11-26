@@ -98,6 +98,7 @@ export class Card extends Component {
   }
 
   render() {
+    const {cur_user} = this.context; 
     const { handleModal } = this.props;
     const { post, img } = this.state;
     console.log(img);
@@ -120,7 +121,7 @@ export class Card extends Component {
                 fontWeight: 600,
               }}
             >
-              <div>Harsh</div>
+              <div style = {{fontSize : "1.2rem"}}>{cur_user.first_name}</div>
             </div>
           </InfoBox>
           <TextArea

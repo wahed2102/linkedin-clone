@@ -6,10 +6,10 @@ import { UserContextProvider } from "./Context/UserContextProvider";
 import "./index.css";
 
 ReactDOM.render(
-
     <UserContextProvider>
         <BrowserRouter>
-        <App />
+            <App />
         </BrowserRouter>
-    </UserContextProvider>
-    , document.getElementById("root"));
+    </UserContextProvider>,
+    document.getElementById("root")
+);

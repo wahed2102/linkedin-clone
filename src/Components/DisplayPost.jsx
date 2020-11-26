@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import styles from "./DisplayPost.module.css";
+import { UserContext } from "../Context/UserContextProvider";
+import axios from "axios";
 
 export class DisplayPost extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            addComments : ""
+            addComments : "",
+            comments : []
         }
     }
     
@@ -16,9 +19,63 @@ export class DisplayPost extends Component {
         })
     }
 
+    handleKeyUp = (e,id) => {
+        const {addComments} =  this.state;
+
+        if(e.key === "Enter") {
+            this.handleComment({id, addComments});
+            this.setState ({
+                addComments : ""
+            })
+        }
+        console.log(id)
+    }
+
+    handleComment=({id, addComments}) =>{
+        const {comments} = this.state;
+        const {cur_uid} = this.context;
+      console.log(addComments)
+        axios.post("http://localhost:8000/comments", {
+            post_id: id,
+            addComments,
+            user_id : cur_uid
+        })
+        .then((res) => {
+            const payload = {
+                post_id: id,
+                addComments,
+                user_id : cur_uid
+            }
+            this.setState ({
+                comments: [...comments, payload]
+            })
+        })
+        .catch((err) => console.log(err))
+    }
+
+    getallcomments = () => {
+        const {comments} = this.state;
+        axios.get("http://localhost:8000/comments")
+            .then((res) => {
+                this.setState({
+                    comments : res.data,
+                })
+            })
+    }
+
+    componentDidMount() {
+        this.getallcomments();
+    }
+
+    componentDidUpdate(prevState) {
+        if(prevState.comments !== this.state.comments) {
+            this.getallcomments();
+        }
+    }
+
     render() {
-        const {name, title, profile_pic, date, likes, comments_count, data} = this.props;
-        const {addComments} = this.state;
+        const {id, name, title, profile_pic, date, likes, comments_count, data} = this.props;
+        const {addComments, comments} = this.state;
         return (
             <div className = {styles.Container}>
                 <div className = {styles.PostContainer}>
@@ -125,6 +182,7 @@ export class DisplayPost extends Component {
                             value = {addComments}
                             name = "addComments"
                             onChange = {this.handleChange}
+                            onKeyUp = {(e) => this.handleKeyUp(e, id)}
                         />
                         <div style = {{marginLeft : "-8rem"}} className = {styles.FlexDisplay}>
                             <div className = {styles.EmojiImageComment}>
@@ -149,8 +207,16 @@ export class DisplayPost extends Component {
                     <div style = {{paddingRight : "1rem"}}>
                         <img height = "50" style ={{cursor : "pointer", borderRadius : "100%"}} src="https://media-exp1.licdn.com/dms/image/C5103AQFsrHwL2EknRg/profile-displayphoto-shrink_100_100/0?e=1611792000&v=beta&t=YyQMnSt_Bzd-NknFQ7QaE28tpR40jtJpQwRcmFzqeUY" alt="Comment User Pic "/>
                     </div>
-                    <div className = {styles.Comment}>
-                        Commenting for better reach
+                    <div>
+                        {
+                            comments?.map((item) => {
+                                if(item.post_id == id) {
+                                    return (
+                                        <div  className = {styles.Comment}>{item.addComments}</div>
+                                    )
+                                }
+                            })
+                        }
                     </div>
                 </div>
                 <div className = {styles.LoadMoreComments}>
@@ -160,3 +226,5 @@ export class DisplayPost extends Component {
         )
     }
 }
+
+DisplayPost.contextType = UserContext;
