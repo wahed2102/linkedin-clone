@@ -208,8 +208,8 @@ export class DisplayPost extends Component {
                             comments?.map((item) => {
                                 if(item.post_id == id) {
                                     return (
-                                            <div className={styles.FlexDisplay}>
-                                                <div > {item.name}</div>
+                                            <div className={styles.GridDisplay}>
+                                                <div style = {{fontSize : "1.5rem", fontWeight : "600", paddingTop : "1rem"}} > {item.name}</div>
                                                 <div  className = {styles.Comment}>{item.addComments}</div>
                                             </div>
                                         
