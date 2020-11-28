@@ -81,7 +81,7 @@
     width: 47rem;
     height: 4rem;
     border-radius: 10rem;
-    border: 0.05rem solid black;
+    border: 0;
 }
 
 /* .InputComment:focus {

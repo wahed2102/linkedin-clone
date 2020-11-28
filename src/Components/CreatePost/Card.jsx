@@ -103,7 +103,7 @@ export class Card extends Component {
     const { post, img } = this.state;
     console.log(img);
     return (
-      <Container>
+      <Container style = {{marginTop : "10rem"}}>
         <Header>
           <div>Create a link</div>
           <Close onClick={handleModal} style>
@@ -121,10 +121,10 @@ export class Card extends Component {
                 fontWeight: 600,
               }}
             >
-              <div style = {{fontSize : "1.2rem"}}>{cur_user.first_name}</div>
+              <div style = {{fontSize : "2rem", lineHeight : "2.5rem"}}>{cur_user.first_name}</div>
             </div>
           </InfoBox>
-          <TextArea
+          <TextArea style = {{fontSize : "2rem"}}
             name="post"
             value={post}
             rows="5"
