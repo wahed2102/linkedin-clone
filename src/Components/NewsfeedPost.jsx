@@ -1,33 +1,27 @@
 import React, { Component } from 'react';
 import { DisplayPost } from "./DisplayPost";
 import axios from "axios";
+import { UserContext } from '../Context/UserContextProvider';
 
 export class NewsfeedPost extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-            posts : []
-        }
+        
     }
 
     componentDidMount () {
-        axios.get("http://localhost:8000/posts")
-        .then((res) => {
-            this.setState({
-                posts: res.data
-            })
-        })
-        .catch((err) => err)
+        const {getPost} = this.context
+        getPost()
     }
 
     render() {
-        const {posts} = this.state;
-        console.log(posts);
+        const {posts} = this.context;
+        // console.log(posts);
         if(posts){
             return (
                 <div style = {{borderRadius : "1rem"}}>
                     {
-                        posts.map((item) => {
+                        posts?.map((item) => {
                             return (
                                 <DisplayPost
                                     key = {item.id}
@@ -39,6 +33,7 @@ export class NewsfeedPost extends Component {
                                     likes = {item.likes}
                                     comments_count = {item.comments_count}
                                     data = {item.data}
+                                    image= {item.img}
                                 />
                             )
                         })
@@ -51,3 +46,5 @@ export class NewsfeedPost extends Component {
         }
     }
 }
+
+NewsfeedPost.contextType = UserContext

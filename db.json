@@ -27,7 +27,7 @@
         "end_year": "2020",
         "description": ""
       },
-      "profile_img": "/",
+      "profile_img": "https://media-exp1.licdn.com/dms/image/C5603AQEAgqm9GyweTQ/profile-displayphoto-shrink_100_100/0/1588331577707?e=1611792000&v=beta&t=h7ycCMPDdfgWOaMp7LeM0_YDBSTEFyxbrL51JTAyLJs",
       "bg_img": "/",
       "skills": [
         "HTML",
@@ -46,6 +46,9 @@
       "password": "1234",
       "first_name": "Harsh",
       "last_name": "Verma",
+      "description": "Learning Mern - Full Stack Developer",
+      "connections": 95,
+      "viewed": 63,
       "headline": "",
       "country": "India",
       "industry": "Information Technology",
@@ -63,7 +66,7 @@
         "end_year": "2020",
         "description": ""
       },
-      "profile_img": "/",
+      "profile_img": "https://media-exp1.licdn.com/dms/image/C5103AQFGpBWLttuEYw/profile-displayphoto-shrink_200_200/0?e=1611792000&v=beta&t=DYrjEjrTeavhv5s0aNX4KNsyjrB522PSSzfbZhyPSRI",
       "bg_img": "/",
       "skills": [
         "HTML",
@@ -79,11 +82,14 @@
     },
     {
       "id": 3,
-      "email": "verma@gmail.com",
-      "username": "harshverma1234",
+      "email": "yash@gmail.com",
+      "username": "yash1234",
       "password": "1234",
-      "first_name": "Harsh",
-      "last_name": "Verma",
+      "first_name": "Yash",
+      "last_name": "Jain",
+      "description": "Full Stack Developer",
+      "connections": 67,
+      "viewed": 20,
       "headline": "",
       "country": "India",
       "industry": "Information Technology",
@@ -101,7 +107,7 @@
         "end_year": "2020",
         "description": ""
       },
-      "profile_img": "/",
+      "profile_img": "https://media-exp1.licdn.com/dms/image/C5103AQHqiEgs5aMnHw/profile-displayphoto-shrink_200_200/0/1573111449010?e=1611792000&v=beta&t=bw_nj4Fnzbm0iEf_wXHcFbimqHXl4VfXPMxUHjKAzww",
       "bg_img": "/",
       "skills": [
         "HTML",
@@ -117,11 +123,14 @@
     },
     {
       "id": 4,
-      "email": "harshverma@gmail.com",
+      "email": "dinesh@gmail.com",
       "username": "harshverma1234",
       "password": "1234",
-      "first_name": "Harsh",
-      "last_name": "Verma",
+      "first_name": "Dinesh",
+      "last_name": "Chaudhari",
+      "description": "Learning MERN",
+      "connections": 45,
+      "viewed": 73,
       "headline": "",
       "country": "India",
       "industry": "Information Technology",
@@ -139,7 +148,7 @@
         "end_year": "2020",
         "description": ""
       },
-      "profile_img": "/",
+      "profile_img": "https://media-exp1.licdn.com/dms/image/C4D03AQFjnMUHt4so6g/profile-displayphoto-shrink_200_200/0?e=1611792000&v=beta&t=p6f_3YCNe5uEdRQN6dK_3HShuv9owQnJ2WL9CXPD4J0",
       "bg_img": "/",
       "skills": [
         "HTML",
@@ -155,11 +164,14 @@
     },
     {
       "id": 5,
-      "email": "vermaharsh@gmail.com",
+      "email": "yogesh@gmail.com",
       "username": "harshverma1234",
       "password": "1234",
-      "first_name": "Harsh",
-      "last_name": "Verma",
+      "first_name": "Yogesh",
+      "last_name": "Bhat",
+      "description": "SVP",
+      "connections": 115,
+      "viewed": 170,
       "headline": "",
       "country": "India",
       "industry": "Information Technology",
@@ -177,7 +189,7 @@
         "end_year": "2020",
         "description": ""
       },
-      "profile_img": "/",
+      "profile_img": "https://media-exp1.licdn.com/dms/image/C5103AQFyVfM-R-Chlg/profile-displayphoto-shrink_200_200/0?e=1611792000&v=beta&t=uj-A80C3JLl2JyfZVt1JhDbd2vv1oNB2fbrukV8aPBg",
       "bg_img": "/",
       "skills": [
         "HTML",
@@ -200,6 +212,7 @@
       "profile_pic": "https://media-exp1.licdn.com/dms/image/C4D03AQHXldUxuWfuMQ/profile-displayphoto-shrink_100_100/0/1595440487798?e=1611792000&v=beta&t=ZVMGHGJ3GcIC5XQeHvJmAZHhlCVpmWW5upok3e5WvOQ",
       "date": "1w",
       "likes": 622,
+      "img": "",
       "comments_count": 2,
       "data": "Most people in the creative department don't really have a soft spot for their account management/client servicing counterparts. It is an open secret in the advertising industry. Not the ideal scenario, but that is the unfortunate truth. What could be the reason behind this animosity?"
     },
@@ -211,6 +224,7 @@
       "date": "6d",
       "likes": 341,
       "comments_count": 9,
+      "img": "",
       "data": "Xeno is hiring for the position of Frontend Developer Intern & Software Testing Intern. If you hate the work around the work & just want to passionately keep coding and keep scaling yourself then this is the perfect opportunity for you."
     },
     {
@@ -219,6 +233,7 @@
       "title": "Campus Ambassador at E-cell IIT Roorkee",
       "profile_pic": "https://media-exp1.licdn.com/dms/image/C5603AQF54_69AoZePg/profile-displayphoto-shrink_100_100/0/1602059304912?e=1611792000&v=beta&t=xHWvqDl-_TkHjjXwYPAGAJugu473Xze0D92vj-cGQEk",
       "date": "21h",
+      "img": "",
       "likes": 2331,
       "comments_count": 4,
       "data": "Feeling so excited as I got Completion letter for ISP19 program Internshala Student partner"
@@ -230,56 +245,39 @@
       "profile_pic": "https://media-exp1.licdn.com/dms/image/C4E03AQGLbmTz4hFsjQ/profile-displayphoto-shrink_100_100/0/1597080137643?e=1611792000&v=beta&t=4Dw34rTN6UBXU4aZoc4D0tb7CHcfHKFTOP87Z1LLI1A",
       "date": "1mo",
       "likes": 227,
+      "img": "",
       "comments_count": 5,
       "data": "Bow wow wow yippie yo yippie yay"
     }
   ],
   "comments": [
     {
-      "addComments": "yes",
-      "user_id": 1,
+      "post_id": 1,
+      "addComments": "Nice!",
+      "user_id": 5,
+      "name": "Yogesh",
+      "id": 1
+    },
+    {
+      "post_id": 5,
+      "addComments": "Nice Post!",
+      "user_id": 3,
+      "name": "Yash",
       "id": 2
     },
     {
-      "addComments": "yess",
-      "user_id": 1,
+      "post_id": 3,
+      "addComments": "dsd",
+      "user_id": 3,
+      "name": "Yash Jain",
       "id": 3
     },
     {
-      "post_id": 1,
-      "addComments": "okay",
+      "post_id": 3,
+      "addComments": "sdd",
+      "user_id": 3,
+      "name": "Yash Jain",
       "id": 4
-    },
-    {
-      "post_id": 3,
-      "addComments": "hello",
-      "id": 5
-    },
-    {
-      "post_id": 4,
-      "addComments": "welcome",
-      "id": 6
-    },
-    {
-      "post_id": 2,
-      "addComments": "good work",
-      "id": 7
-    },
-    {
-      "post_id": 2,
-      "addComments": "nice post",
-      "id": 8
-    },
-    {
-      "post_id": 1,
-      "addComments": "hello",
-      "id": 9
-    },
-    {
-      "post_id": 3,
-      "addComments": "Great !",
-      "user_id": 1,
-      "id": 10
     }
   ]
 }

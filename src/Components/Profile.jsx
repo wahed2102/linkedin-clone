@@ -8,13 +8,13 @@ export default class Profile extends Component {
   }
   render() {
     const {cur_id,cur_user} = this.context
-    console.log(cur_user)
+    // console.log(cur_user)
     const {background} = this.props
     return (
       <div className={styles.main}>
           <div>
             <div className={styles.background}></div>
-            <img className={styles.img} src={photo} alt={cur_user.alt} />
+            <img className={styles.img} src={cur_user.profile_img} alt={cur_user.alt} />
             <a className={styles.name}>{cur_user.name}</a>
             <p className={styles.description}>{cur_user.description}</p>
           </div>

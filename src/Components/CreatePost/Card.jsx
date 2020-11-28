@@ -92,9 +92,9 @@ export class Card extends Component {
     const event = new Date();
     const create_time = event.toLocaleTimeString("en-US");
     createPost({ cur_uid, img, post, create_time });
-    {
+    
       handleModal(e);
-    }
+  
   }
 
   render() {
