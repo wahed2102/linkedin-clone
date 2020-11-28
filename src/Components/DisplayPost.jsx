@@ -8,7 +8,6 @@ export class DisplayPost extends Component {
         super(props)
         this.state = {
             addComments : "",
-            comments : []
         }
     }
     
@@ -22,66 +21,63 @@ export class DisplayPost extends Component {
     handleKeyUp = (e,id) => {
         const {addComments} =  this.state;
 
-        if(e.key === "Enter") {
+        if(e.key === "Enter" && addComments !== "") {
             this.handleComment({id, addComments});
             this.setState ({
                 addComments : ""
             })
         }
-        console.log(id)
+        // console.log(id)
     }
 
     handleComment=({id, addComments}) =>{
         const {comments} = this.state;
-        const {cur_uid} = this.context;
-      console.log(addComments)
+        const {cur_uid,getComments,getPost,cur_user} = this.context;
+    //   console.log(addComments)
         axios.post("http://localhost:8000/comments", {
             post_id: id,
             addComments,
-            user_id : cur_uid
+            user_id : cur_uid,
+            name:cur_user.first_name+" "+cur_user.last_name
         })
         .then((res) => {
-            const payload = {
-                post_id: id,
-                addComments,
-                user_id : cur_uid
-            }
-            this.setState ({
-                comments: [...comments, payload]
-            })
+            getComments()
+            getPost()
         })
         .catch((err) => console.log(err))
     }
 
-    getallcomments = () => {
-        const {comments} = this.state;
-        axios.get("http://localhost:8000/comments")
-            .then((res) => {
-                this.setState({
-                    comments : res.data,
-                })
-            })
+
+    getName=(user_id)=>{
+        // console.log(id)
+        const {users} = this.context
+        let name = users.find(item=>{
+            if(item.id===user_id)
+            {
+                return item.first_name
+            }
+        })
+
+        return name
     }
 
-    componentDidMount() {
-        this.getallcomments();
-    }
-
-    componentDidUpdate(prevState) {
-        if(prevState.comments !== this.state.comments) {
-            this.getallcomments();
-        }
-    }
+    // componentDidUpdate(prevState) {
+    //     if(prevState.comments !== this.state.comments) {
+    //         this.getallcomments();
+    //     }
+    // }
 
     render() {
-        const {id, name, title, profile_pic, date, likes, comments_count, data} = this.props;
-        const {addComments, comments} = this.state;
+        const {id, name, title, profile_pic, date, likes, comments_count, image ,data} = this.props;
+        const {addComments} = this.state;
+        const {comments,cur_user,users} = this.context
+        // console.log(comments)
         return (
             <div className = {styles.Container}>
                 <div className = {styles.PostContainer}>
                     <div className = {styles.FriendsDetails}>
                         <div>
-                            <img src = {profile_pic} alt = {title} height = "50" style ={{cursor : "pointer", borderRadius : "100%"}} />
+                            <img src = {profile_pic} alt ="profile image" height = "50" style ={{cursor : "pointer", borderRadius : "100%"}} />
                         </div>
                         <div style = {{margin: "0 2rem 0 1rem", width : "35rem" ,cursor : "pointer", overflow : "hidden", whiteSpace : "nowrap", textOverflow : "ellipsis"}}>
                             <div>
@@ -173,7 +169,7 @@ export class DisplayPost extends Component {
     
                 <div className = {styles.FlexDisplay} style = {{padding : "1rem"}}>
                     <div>
-                        <img height = "50" style ={{cursor : "pointer", borderRadius : "100%"}} src = "https://media-exp1.licdn.com/dms/image/C5103AQHqiEgs5aMnHw/profile-displayphoto-shrink_100_100/0/1573111449010?e=1611792000&v=beta&t=iDqt4khcMRxg2HtQyqdZmXVog4ha0Zos770CmOrk-gU" alt = "User Pic"/>
+                        <img height = "50" style ={{cursor : "pointer", borderRadius : "100%"}} src = {cur_user.profile_img} alt = "User Pic"/>
                     </div>
                     <div className = {styles.FlexDisplay}>
                         <input 
@@ -204,15 +200,19 @@ export class DisplayPost extends Component {
                 </div>
 
                 <div className = {styles.FlexDisplay} style = {{padding : "1rem"}}>
-                    <div style = {{paddingRight : "1rem"}}>
+                    {/* <div style = {{paddingRight : "1rem"}}>
                         <img height = "50" style ={{cursor : "pointer", borderRadius : "100%"}} src="https://media-exp1.licdn.com/dms/image/C5103AQFsrHwL2EknRg/profile-displayphoto-shrink_100_100/0?e=1611792000&v=beta&t=YyQMnSt_Bzd-NknFQ7QaE28tpR40jtJpQwRcmFzqeUY" alt="Comment User Pic "/>
-                    </div>
+                    </div> */}
                     <div>
                         {
                             comments?.map((item) => {
                                 if(item.post_id == id) {
                                     return (
-                                        <div  className = {styles.Comment}>{item.addComments}</div>
+                                            <div className={styles.FlexDisplay}>
+                                                <div > {item.name}</div>
+                                                <div  className = {styles.Comment}>{item.addComments}</div>
+                                            </div>
+                                        
                                     )
                                 }
                             })

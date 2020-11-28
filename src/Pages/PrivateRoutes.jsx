@@ -9,7 +9,7 @@ export const PrivateRoute = ({Component, ...rest}) => {
                 return isAuth ? (
                     <Route {...rest} render = {(props) => <Component {...props}></Component>}></Route>
                 ) : (
-                    <Redirect to = "/signin"></Redirect>
+                    <Redirect to = "/signin" />
                 )
             }}
         </UserContext.Consumer>
