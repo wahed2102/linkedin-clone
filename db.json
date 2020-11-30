@@ -278,6 +278,27 @@
       "user_id": 3,
       "name": "Yash Jain",
       "id": 4
+    },
+    {
+      "post_id": 1,
+      "addComments": "nice post",
+      "user_id": 5,
+      "name": "Yogesh Bhat",
+      "id": 5
+    },
+    {
+      "post_id": 1,
+      "addComments": "nice post",
+      "user_id": 5,
+      "name": "Yogesh Bhat",
+      "id": 6
+    },
+    {
+      "post_id": 2,
+      "addComments": "nice post",
+      "user_id": 5,
+      "name": "Yogesh Bhat",
+      "id": 7
     }
   ]
 }
