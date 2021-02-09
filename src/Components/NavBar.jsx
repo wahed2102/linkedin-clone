@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 import styled from "styled-components";
 import LinkedinSmallLogo from "../images/linkedinSmallLogo.png";
 import Photo from "../images/wahed.jpg";
-import {UserContext} from '../Context/UserContextProvider'
+import { UserContext } from "../Context/UserContextProvider";
 
 const Wrapper = styled.div`
   margin: 0 auto;
@@ -84,9 +84,8 @@ const PremiumUnderline = styled.div`
 `;
 
 export class NavBar extends Component {
-
   render() {
-    const {cur_user} = this.context
+    const { cur_user, handleLogout } = this.context;
     return (
       <WrapperInternal>
         <Wrapper>
@@ -99,9 +98,12 @@ export class NavBar extends Component {
                 style={{ cursor: "pointer" }}
               />
             </div>
-            <input placeholder="Search" style={{ backgroundColor: "#eef3f8" }} />
+            <input
+              placeholder="Search"
+              style={{ backgroundColor: "#eef3f8" }}
+            />
           </LeftSection>
-  
+
           <RightSection>
             <Catergory>
               <img
@@ -147,6 +149,7 @@ export class NavBar extends Component {
               />
               Me ▼
             </Catergory>
+            <Catergory onClick={() => handleLogout()}>Logout</Catergory>
             <Catergory>
               <img
                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzQxLjMzMyAzNDEuMzMzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzNDEuMzMzIDM0MS4zMzM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8Zz4NCgkJCTxyZWN0IHg9IjEyOCIgeT0iMTI4IiB3aWR0aD0iODUuMzMzIiBoZWlnaHQ9Ijg1LjMzMyIvPg0KCQkJPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9Ijg1LjMzMyIgaGVpZ2h0PSI4NS4zMzMiLz4NCgkJCTxyZWN0IHg9IjEyOCIgeT0iMjU2IiB3aWR0aD0iODUuMzMzIiBoZWlnaHQ9Ijg1LjMzMyIvPg0KCQkJPHJlY3QgeD0iMCIgeT0iMTI4IiB3aWR0aD0iODUuMzMzIiBoZWlnaHQ9Ijg1LjMzMyIvPg0KCQkJPHJlY3QgeD0iMCIgeT0iMjU2IiB3aWR0aD0iODUuMzMzIiBoZWlnaHQ9Ijg1LjMzMyIvPg0KCQkJPHJlY3QgeD0iMjU2IiB5PSIwIiB3aWR0aD0iODUuMzMzIiBoZWlnaHQ9Ijg1LjMzMyIvPg0KCQkJPHJlY3QgeD0iMTI4IiB5PSIwIiB3aWR0aD0iODUuMzMzIiBoZWlnaHQ9Ijg1LjMzMyIvPg0KCQkJPHJlY3QgeD0iMjU2IiB5PSIxMjgiIHdpZHRoPSI4NS4zMzMiIGhlaWdodD0iODUuMzMzIi8+DQoJCQk8cmVjdCB4PSIyNTYiIHk9IjI1NiIgd2lkdGg9Ijg1LjMzMyIgaGVpZ2h0PSI4NS4zMzMiLz4NCgkJPC9nPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K"
@@ -154,6 +157,7 @@ export class NavBar extends Component {
               />
               Work ▼
             </Catergory>
+
             <PremiumUnderline>
               Try Premium Free <br /> for 1 Month
             </PremiumUnderline>
@@ -164,4 +168,4 @@ export class NavBar extends Component {
   }
 }
 
-NavBar.contextType=UserContext
+NavBar.contextType = UserContext;

@@ -10,6 +10,7 @@ const Navigation = styled.div`
   justify-content: space-between;
   width: 134.7rem;
   padding: 1.5rem 10rem;
+  background-color: white;
 `;
 
 const RightSection = styled.div`

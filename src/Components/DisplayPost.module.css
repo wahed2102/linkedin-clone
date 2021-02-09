@@ -81,7 +81,7 @@
     width: 47rem;
     height: 4rem;
     border-radius: 10rem;
-    border: 0.05rem solid black;
+    border: 0;
 }
 
 /* .InputComment:focus {
@@ -124,4 +124,10 @@
     font-size: 1.4rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
+}
+
+.GridDisplay {
+    display : grid;
+    grid-template-columns: 7rem auto;
+    grid-gap: 1rem;
 }

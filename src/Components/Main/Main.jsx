@@ -15,7 +15,7 @@ const Main = () => {
 	const [user, setUser] = useState([])
 
   return (
-    <div>
+    <div style = {{backgroundColor : "#f3f2ef"}}>
       <NavBar></NavBar>
       <div
         style={{
@@ -23,7 +23,7 @@ const Main = () => {
           flexDirection: "row",
           width: "1128px",
           margin: "0px auto",
-          marginTop: "49px",
+          marginTop: "2rem",
         }}
       >
         <div style={{ flexBasis: "200px" }}>
