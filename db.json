@@ -295,25 +295,32 @@
       "id": 4
     },
     {
-      "post_id": 4,
-      "addComments": "Hi there !",
-      "user_id": 3,
-      "name": "Yash Jain",
+      "post_id": 1,
+      "addComments": "nice post",
+      "user_id": 5,
+      "name": "Yogesh Bhat",
       "id": 5
     },
     {
-      "post_id": 2,
-      "addComments": "That's great info. thanks for sharing.",
-      "user_id": 3,
-      "name": "Yash Jain",
+      "post_id": 1,
+      "addComments": "nice post",
+      "user_id": 5,
+      "name": "Yogesh Bhat",
       "id": 6
     },
     {
-      "post_id": 5,
-      "addComments": "Good Luck.",
+      "post_id": 2,
+      "addComments": "nice post",
+      "user_id": 5,
+      "name": "Yogesh Bhat",
+      "id": 7
+    },
+    {
+      "post_id": 2,
+      "addComments": "Interested",
       "user_id": 3,
       "name": "Yash Jain",
-      "id": 7
+      "id": 8
     }
   ]
 }
