@@ -239,21 +239,23 @@
       "data": "Feeling so excited as I got Completion letter for ISP19 program Internshala Student partner"
     },
     {
-      "id": 4,
-      "name": "Andrew Brown",
-      "title": "CEO of ExamPro, AWS Community Hero and #100DaysOfCloud Core-Team",
-      "profile_pic": "https://media-exp1.licdn.com/dms/image/C4E03AQGLbmTz4hFsjQ/profile-displayphoto-shrink_100_100/0/1597080137643?e=1611792000&v=beta&t=4Dw34rTN6UBXU4aZoc4D0tb7CHcfHKFTOP87Z1LLI1A",
+      "user_id": 3,
+      "data": "Hello welcome to my LinkedIn clone.\nThis is my first post.",
+      "create_time": "8:50:42 AM",
+      "img": "",
       "date": "1mo",
       "likes": 227,
-      "img": "",
+      "profile_pic": "https://media-exp1.licdn.com/dms/image/C5103AQHqiEgs5aMnHw/profile-displayphoto-shrink_200_200/0/1573111449010?e=1611792000&v=beta&t=bw_nj4Fnzbm0iEf_wXHcFbimqHXl4VfXPMxUHjKAzww",
       "comments_count": 5,
-      "data": "Bow wow wow yippie yo yippie yay"
+      "name": "Yash Jain",
+      "title": "CEO of ExamPro, AWS Community Hero and #100DaysOfCloud Core-Team",
+      "id": 4
     },
     {
       "user_id": 3,
-      "data": "Hey guys this is LinkedIn clone",
-      "create_time": "8:47:14 PM",
-      "img": "blob:http://localhost:3000/5b9683c2-66ff-41a1-996a-2d6f7de9e658",
+      "data": "This is my linked clone website.",
+      "create_time": "8:56:27 AM",
+      "img": "",
       "date": "1mo",
       "likes": 227,
       "profile_pic": "https://media-exp1.licdn.com/dms/image/C5103AQHqiEgs5aMnHw/profile-displayphoto-shrink_200_200/0/1573111449010?e=1611792000&v=beta&t=bw_nj4Fnzbm0iEf_wXHcFbimqHXl4VfXPMxUHjKAzww",
@@ -266,51 +268,51 @@
   "comments": [
     {
       "post_id": 1,
-      "addComments": "Nice!",
+      "addComments": "Thanks for information",
       "user_id": 5,
-      "name": "Yogesh",
+      "name": "Wahed",
       "id": 1
     },
     {
-      "post_id": 5,
-      "addComments": "Nice Post!",
-      "user_id": 3,
-      "name": "Yash",
+      "post_id": 2,
+      "addComments": "Keep Going!",
+      "user_id": 5,
+      "name": "Harsh",
       "id": 2
     },
     {
       "post_id": 3,
-      "addComments": "dsd",
-      "user_id": 3,
-      "name": "Yash Jain",
+      "addComments": "Great!",
+      "user_id": 5,
+      "name": "Albert",
       "id": 3
     },
     {
-      "post_id": 3,
-      "addComments": "sdd",
+      "post_id": 1,
+      "addComments": "Commenting for better reach",
       "user_id": 3,
       "name": "Yash Jain",
       "id": 4
     },
     {
-      "post_id": 2,
-      "addComments": "That is great !",
+      "post_id": 4,
+      "addComments": "Hi there !",
       "user_id": 3,
       "name": "Yash Jain",
       "id": 5
     },
     {
-      "post_id": 4,
-      "addComments": "Wierdo",
+      "post_id": 2,
+      "addComments": "That's great info. thanks for sharing.",
       "user_id": 3,
       "name": "Yash Jain",
       "id": 6
     },
     {
-      "post_id": 1,
-      "addComments": "Commenting for better reach!",
-      "user_id": 1,
-      "name": "Wahed Ali",
+      "post_id": 5,
+      "addComments": "Good Luck.",
+      "user_id": 3,
+      "name": "Yash Jain",
       "id": 7
     }
   ]
