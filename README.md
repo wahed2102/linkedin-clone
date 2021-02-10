@@ -1,4 +1,4 @@
-# Methane
+# Linkedin clone
 
 <h1 align="center">LinkedIn clone.</h1>
 Has functionality of Signin, creating a post and commenting on a post.
@@ -43,3 +43,7 @@ $ git clone https://github.com/wahed2102/Methane.git
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+
+
+## App
+To get a hands on the project kindly visit https://linkedin-clone10.vercel.app/
